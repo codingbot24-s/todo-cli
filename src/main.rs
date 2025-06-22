@@ -2,7 +2,6 @@ use std::fs::File;
 use std::io::{Read, Write};
 use std::path::Path;
 
-
 use clap::{Parser, Subcommand};
 use serde::{Deserialize, Serialize};
 
@@ -99,12 +98,9 @@ fn main() {
                 task.done = true;
                 save_task(&tasks);
                 println!("Task mark as done")
-            }
-            else {
+            } else {
                 println!("Error Marking As Done")
             }
-            
-            
         }
     }
 }
